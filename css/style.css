@@ -14,10 +14,25 @@ body {
   line-height: 1.4;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fb6d3a;
+  border-radius: 6px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
 h4,
 p,
-ul {
-  margin: 10px 0;
+ul,
+span {
+  margin: 8px 0;
 }
 
 .bg {
@@ -43,8 +58,6 @@ ul {
 /* main content section */
 
 .main-content-section {
-  /* background: no-repeat url("../img/cloud.jpg") center;
-  background-size: cover; */
   padding: 100px 90px;
 }
 
@@ -60,6 +73,7 @@ ul {
 /* about me section */
 
 .about-me-section {
+  text-align: center;
   margin: 0 0 40px 0;
 }
 
@@ -82,7 +96,7 @@ ul {
 }
 
 .my-goal {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
 }
 
@@ -133,18 +147,38 @@ ul {
   color: black;
 }
 
-/* my work experiense*/
-
-/* .my-work-experiense-company {
-  color: #fb6d3a;
-} */
-
 .my-work-experiense-position {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.4;
-  margin: 0 0 10px 0;
+  /* margin: 0 0 10px 0; */
+}
+
+.my-work-experiense-list {
+  padding: 0 0 0 17px;
+}
+
+.my-work-experiense-accent {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.my-work-experiense-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 220px;
+  width: 444px;
+}
+
+.my-work-experiense-item {
+  width: 335px;
+  color: #fb6d3a;
+}
+
+.my-work-experiense-item-accent {
+  color: #000;
 }
 
 .my-work-experiense-time {
@@ -190,7 +224,7 @@ ul {
 /* sidebar-section */
 
 .sidebar-section {
-  width: 115%;
+  width: 350px;
   background-color: #1e2939;
   border-radius: 4px 0 0 4px;
   padding: 40px 0;
@@ -201,8 +235,8 @@ ul {
 }
 
 .sidebar-section-image {
-  width: 330px;
-  height: 380px;
+  width: 350px;
+  height: 450px;
   border-radius: 50%;
   box-shadow: 6px rgba(0, 0, 0, 0.1);
 }
@@ -236,11 +270,15 @@ ul {
 }
 
 .contacts-section-link {
-  color: #c8d6e9;
+  color: #000;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.4;
+}
+
+.contacts-section-link:hover {
+  color: gray;
 }
 
 .skills {
